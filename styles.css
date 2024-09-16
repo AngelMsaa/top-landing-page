@@ -1,27 +1,38 @@
 html {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
-    gap: 120px;
     margin: 0px;
     align-items: center;
 }
+
 
 header {
     color: #e5e7eb;
     display: flex;
     padding: 16px 16px;
-    flex: auto;
-    max-width: 980px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 892px;
+    box-sizing: border-box;
+}
+
+.hero.section {
+    max-width: 892px;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .section {
     padding: 0px 16px;
-    flex: 1 1 0;
+    width: 100%;
 }
 
 #header-logo {
@@ -40,7 +51,6 @@ header {
     display: flex;
     gap: 24px;
     flex: 1 1 0;
-    align-items: start;
 }
 
 .hero-text-buttons {
@@ -54,11 +64,13 @@ header {
     color: #f9faf8;
     margin-block-start: 0;
     margin-block-end: 0;
+    line-height: 125%;
 }
 
 .hero p{
     font-size: 18px;
     color: #e5e7eb;
+    line-height: 140%;
 }
 
 .information.section {
@@ -67,6 +79,10 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 24px;
+    padding-top: 40px;
+    padding-bottom: 112px;
+
 }
 .information-section h2 {
     font-size: 36px;
@@ -74,18 +90,37 @@ header {
     font-weight: 900;
 }
 
-.customer-quote-container {
-    color: #e5e7eb;
+.customer-quote.section {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    align-items: center;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    gap: 16px;
 }
 
 .customer-quote p {
-    font-size: 36px;
-    font-weight: lighter;
+    font-size: 32px;
+    font-weight: 300;
     font-style: italic;
+    max-width: 748px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    
 }
 
-.quote-customer-name {
+.customer-quote.name {
     font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+    max-width: 748px;
 }
 
 button {
@@ -95,10 +130,6 @@ button {
     border-radius: 8px;
     border: 0;
     font-weight: 700;
-}
-
-.cta {
-    background-color: #3882f9;
 }
 
 h3 {
@@ -112,4 +143,93 @@ h3 {
 .hero img {
     width: 400px;
     flex: 1 1 300px
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    max-width: 748px;
+}
+
+.card {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.card-illustration {
+    border-radius: 8px;
+    height: 140px;
+    width: 100%;
+    border: 4px solid #3882f9;
+}
+
+.a {
+    color: white;    
+}
+
+.information h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.cta.section {
+    display: flex;
+    background-color: #f9faf8;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.cta-container {
+    display: flex;
+    background-color: #3882f9;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 892px;
+    max-width: 892px;
+    padding-left: 20px;
+    padding-right: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.cta-text {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    gap: 0;
+    padding-left: 80px;
+
+    justify-content: center;
+}
+
+.cta p, .cta h3{
+    color: #e5e7eb;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+.ghost {
+    border: 2px solid #e5e7eb;
+}
+
+footer {
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+footer p {
+    color: #f9faf8;
 }
